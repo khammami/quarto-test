@@ -35,7 +35,7 @@ Read the same data into R, do some grouping and summarization, then make it avai
 library(readr)
 library(dplyr)
 
-co2 = read_csv("co2_mm.csv")  %>% 
+co2 = read_csv("data/co2_mm_mlo.csv")  %>% 
   group_by(year) %>% 
   summarize(max = max(average))
 
