@@ -10,6 +10,7 @@ website:
       - about.qmd
       - href: shiny.qmd
         text: Shiny
+      - ojsplot.qmd
 
 format:
   html:
