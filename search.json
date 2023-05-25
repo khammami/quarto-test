@@ -7,6 +7,13 @@
     "text": "Number of bins:"
   },
   {
+    "objectID": "ojsplot.html",
+    "href": "ojsplot.html",
+    "title": "NOAA CO2",
+    "section": "",
+    "text": "Read and plot a CSV of NOAA’s Monthly CO2 concentration data from Mauna Loa:\n\ndata = {\n  const co2data = await FileAttachment(\"data/co2_mm_mlo.csv\")\n    .csv({ typed: true });\n  return co2data.map(d =&gt; { \n    d[\"decimal date\"] = Number(d[\"decimal date\"]);\n    d.average = Number(d.average); \n    return d; \n  });\n}\nPlot.plot({\n  marks: [\n    Plot.line(data, \n      { x: \"decimal date\", y: \"average\"}, \n      { stroke: \"black\" }\n    )\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRead the same data into R, do some grouping and summarization, then make it available using ojs_define:\n\nlibrary(readr)\nlibrary(dplyr)\n\nco2 = read_csv(\"data/co2_mm_mlo.csv\")  %&gt;% \n  group_by(year) %&gt;% \n  summarize(max = max(average))\n\nojs_define(co2data = co2)\n\nNow plot the summarized data:\n\nPlot.plot({\n  marks: [\n    Plot.line(transpose(co2data), \n      {x: \"year\", y: \"max\"}, \n      { stroke: \"black\" }\n    )\n  ]}\n)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "quartooo",

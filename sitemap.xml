@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/khammami/quarto-test/shiny.html</loc>
-    <lastmod>2023-05-24T12:45:23.764Z</lastmod>
+    <lastmod>2023-05-25T15:26:22.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/khammami/quarto-test/ojsplot.html</loc>
+    <lastmod>2023-05-25T15:26:26.283Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/khammami/quarto-test/index.html</loc>
-    <lastmod>2023-05-24T12:45:24.584Z</lastmod>
+    <lastmod>2023-05-25T15:26:26.940Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/khammami/quarto-test/about.html</loc>
-    <lastmod>2023-05-24T12:45:25.040Z</lastmod>
+    <lastmod>2023-05-25T15:26:27.544Z</lastmod>
   </url>
 </urlset>
